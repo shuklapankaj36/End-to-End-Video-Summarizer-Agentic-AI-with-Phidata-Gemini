@@ -77,8 +77,10 @@ if video_file:
                     analysis_prompt = ( 
                         f"""You are a Video analyser agent. 
                         Analyze the uploaded video for content and context. 
+                        Respond to the following query using video insights and supplementary web research.
 
-                        User Query: {user_query}
+                        {user_query}
+                        
                         provide a detailed, user-friendly and actionable response. 
                             
                         """
